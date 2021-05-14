@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns = "http:www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+				
+		<!--
+			File:  contact.html
+			Author:  Chad Lister
+			Date:  05/13/2021
+			
+			Final project for CSCI 1140 Intro to JavaScript.  Hasn't been verified or ADA tested.
+		-->
+		
+		<!--  Browser compatibility -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- ???? -->
+		<meta name="description" content="">
+		<!-- search tags ?? -->
+		<meta name="keywords" content="concrete services, concrete, concrete pumping, cement">
+				
+		<!-- Device compatibility -->
+		<meta name = "viewport" width ="width-device-width">
+				
+		<style>
+		
+			#title {
+				text-align: center;
+				font-style: bold;
+			}
+					
+			#panel {
+				margin: auto;
+				padding-left: 10px;
+				padding-right: 10px;
+				display: flex;
+				flex-direction: row;
+				max-height: 600px;
+				max-width: 1400px;
+				background-color: #DCDCDC;
+			}
+			
+			#companyinfo {
+				height: 400px;
+				width: 400px;
+				padding: 15px;
+				text-align: left;
+			}
+			
+			#companyinfo h2{
+				color: red;
+			}
+			
+			#companyinfo p {
+				padding: 35px;
+			}
+			
+			#form{
+				height: 600px;
+				width: 600px;
+				padding: 25px;
+			}
+			
+			#submit {
+				margin-left: 150px;
+				margin-right: 150px;
+				font-size: 15px;
+				font-weight: 100;
+				padding: 10px;
+			}
+			
+			#thankyou {
+				margin-top: 30px;
+				font-size: 20px;
+				color: red;
+				font-style: !important;
+			}
+			
+			#spacer {
+				height: 20px;
+				width: 20px;
+			}
+			
+		</style>
+		
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		
+		
+		<!-- Top Banner -->
+		<nav>
+			<section id="anchor">
+			
+				<h1>JENSEN&#39S CONCRETE</h1>
+			
+				<ul id="navigation">
+					<li><a href="index.html">Home</a></li>
+ 					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</section>
+		</nav>
+		
+		<h2 id="title">Contact Us</h2>
+		
+		<!-- center -->
+		<div id="panel">
+			
+			<section id="companyinfo">
+				<h2>Jensen's Conrete</h2>
+				<p>2950 North Bulldog Road<br>
+					Cedar City, UT  84720</p>
+				<h2>Phone #</h2>
+				<p>(435) 867-9999</p><br>
+				<h2>Store Hours</h2>
+				<p>Monday - Friday:  8:00 am - 6:00 pm<br>Saturday:         8:00 am - 12:00 pm<br>Sunday:				     Closed</p>
+				
+			</section>
+			
+			<div id="spacer"></div>
+			
+			<section id="form">
+			
+				<form action="nothing" name = "myForm">
+					<fieldset class="contactinfo">
+						<legend>Contact Information</legend>
+							<label>Name:
+								<input type="text" name="Name" id="nameinput" class="field">
+							</label><br>
+							<label>Address:
+								<input type="text" name="Address1" id="address1" class="field">
+							</label><br>
+							<label>Address:
+								<input type="text" name="Address2" id="address2" class="field">
+							</label><br>
+							<label>City:
+								<input type="text" name="City" id="city" class="field">
+							</label>
+					</fieldset>
+					
+					<fieldset class="email">
+					
+					<legend>Telephone</legend>
+						<label>Phone:
+							<input type="number" name="PhoneNumber" id="phone" class="field">
+						</label>
+						<label>Email:
+							<input type="email" name="EmailAddress" id="email" class="field">
+						</label>
+					
+					</fieldset>
+					
+					<fieldset class="info">
+						<legend>Additional Information</legend>
+							<label>
+								<textarea name="Additional" id="add" rows="8" cols="50"></textarea>
+							</label>
+					</fieldset>
+				</form>
+					
+				<input type="button" onclick="return(validate());" value="Submit" id="submit">
+				
+				<div id="thankyou"></div>
+				
+			</section>
+					
+		</div>
+		
+		<div id="spacer"></div>
+		
+		<!-- Bottom Banner -->
+		<div>
+			<section id="anchor">
+			
+				<h2>Follow us on:  </h2>		
+				<ul id="navigation">
+					<li><a href="https://www.facebook.com">Facebook</a></li>
+					<li><a href="https://twitter.com">Twitter</a></li>
+					<li><a href="https://www.pinterest.com">Pinterest</a></li>
+				</ul>
+			</section>
+		</div>
+		
+		<!-- external js link -->
+		<script src="contact.js"></script>
+		
+	</body>
+</html>
