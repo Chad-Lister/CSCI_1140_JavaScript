@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns = "http:www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8">
+		<title>Jensen's Concrete | Concrete Professionals</title>
+				
+		<!--
+			File:  contact.html
+			Author:  Chad Lister
+			Date:  05/18/2021
+			
+			Final project for CSCI 1140 Intro to JavaScript.  Hasn't been verified or ADA tested.
+		-->
+		
+		<!--  Browser compatibility -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- ???? -->
+		<meta name="description" content="">
+		<!-- search tags ?? -->
+		<meta name="keywords" content="concrete services, concrete, concrete pumping, cement">
+				
+		<!-- Device compatibility -->
+		<meta name = "viewport" content="width=device-width, initial-scale=1">
+				
+		<style>
+			
+			#title {
+				margin-top: 10px;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+			
+			#panel {
+				margin: auto;
+				display: flex;
+				flex-direction: row;
+				height: 90%;
+				width: 90%;
+				background-color: #DCDCDC;
+				margin-bottom: 10px;
+				position: relative;
+			}
+						
+			#companyinfo {
+				height: 400px;
+				width: 40%;
+				padding: 15px;
+				text-align: left;
+				position: relative;
+			}
+			
+			#companyinfo h1{
+				color: red;
+/*				text-decoration: underline;*/
+			}
+			
+			#detail {
+				margin-left: 35px;
+				font-size: 15px;
+			}
+			
+			#form{
+				height: 600px;
+				width: 60%;
+				padding: 25px;
+				position: relative;
+			}
+			
+			#submit {
+				margin-top: 20px;
+				margin-left: 40%;
+				margin-right: 50%;
+				font-size: 20px;
+				padding: 10px;
+			}
+			
+			#thankyou {
+				margin-top: 30px;
+				font-size: 40px;
+				color: red;
+				text-align: center;
+			}
+		</style>
+		
+		<!-- Main styling link -->
+ 		<link rel="stylesheet" href="./css/style.css">
+
+	</head>
+	<body>
+		
+		
+		<!-- Top Banner -->
+		<nav>
+			<section id="anchor">
+			
+				<h1>JENSEN&#39S CONCRETE</h1>
+			
+				<ul id="navigation">
+					<li><a href="./index.html">Home</a></li>
+ 					<li><a href="./about.html">About</a></li>
+					<li><a href="./services.html">Services</a></li>
+					<li><a href="./contact.html">Contact Us</a></li>
+				</ul>
+			</section>
+		</nav>
+		
+		<div id="title"><h1><strong>Contact Us</strong></h1></div>
+		
+		<!-- center display -->
+		<div id="panel">
+			<div id="companyinfo">
+				<h1><strong>Jensen's Concrete</strong></h1>
+				<div id="detail">2950 North Bulldog Road<br>
+					Cedar City, UT  84720</div>
+				<br>
+				<h1><strong>Phone #</strong></h1>
+				<div id="detail">(435) 867-9999</div>
+				<br>
+				<h1><strong>Store Hours</strong></h1>
+				<div id="detail"><em>Monday - Friday:</em><br>8:00 am to 6:00 pm<br><br><em>Saturday:</em><br>8:00 am to 12:00 pm<br><br><em>Sunday:</em><br>closed</div>
+				</div>
+			
+			<div id="form">
+			
+				<form action="nothing" name = "myForm">
+					<fieldset>
+						<legend>Contact Information</legend>
+							<label>Name:
+								<input type="text" name="Name" id="nameinput">
+							</label><br>
+							<label>Address:
+								<input type="text" name="Address1" id="address1">
+							</label><br>
+							<label>Address:
+								<input type="text" name="Address2" id="address2">
+							</label><br>
+							<label>City:
+<!-- 								<input type="text" name="City" id="city" class="field"> -->
+								<select>
+									<option name="City" id="city">Cedar City</option>
+									<option name="City" id="city">Enoch</option>
+								</select>
+							</label>
+					</fieldset>
+					
+					<fieldset>
+					
+					<legend>Telephone</legend>
+						<label>Phone:
+							<select>
+								<option name="AreaCode" id="areacode">435</option>
+								<option name="AreaCode" id="areacode">801</option>
+							</select>
+							</label>
+							<label>   
+								<input name="Prefix" type="number" id="prefix" width="3">
+							</label>
+							<label>
+								<input type="number" name="PhoneNumber" id="phone">
+							</label>
+						</label><br>
+						<label>Email:
+							<input type="email" name="EmailAddress" id="email">
+						</label>
+					
+					</fieldset>
+					
+					<fieldset>
+						<legend>Additional Information</legend>
+							<label>
+								<textarea name="Additional" id="add" rows="8" cols="50"></textarea>
+							</label>
+					</fieldset>
+				</form>
+					
+				<input type="button" onclick="return(validate());" value="Submit" id="submit">
+				
+				<div id="thankyou"></div>
+				
+			</div>
+					
+		</div>
+		
+<!-- 		<div id="spacer"></div> -->
+		
+		<!-- Bottom Banner -->
+		<div>
+			<section id="anchor">
+			
+				<h2>Follow us on:  </h2>		
+				<ul id="navigation">
+					<li><a href="https://www.facebook.com/JensensConcrete">Facebook</a></li>
+					<li><a href="https://twitter.com/jensensconcrete">Twitter</a></li>
+					<li><a href="https://www.pinterest.com/jensensconcrete">Pinterest</a></li>
+				</ul>
+			</section>
+		</div>
+		
+		<!-- external js link -->
+		<script src="./javascript/contact.js"></script>
+		
+	</body>
+</html>
